@@ -1,0 +1,1 @@
+Foto Bloomé Florist - versi HD untuk website. Nama file dipertahankan persis agar cocok dengan script.js. Semua foto berasal dari aset desain yang sebelumnya digunakan dan diperbesar/dipertajam untuk tampilan web.

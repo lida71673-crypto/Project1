@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bloomé Florist — Bunga indah untuk setiap momen</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<header class="site-header">
+
+  <a class="brand" href="#beranda" aria-label="Bloomé Florist">
+    <span class="brand-mark">❀</span>
+    <span>
+      <strong>Bloomé</strong>
+      <small>Florist</small>
+    </span>
+  </a>
+
+  <nav class="main-nav" aria-label="Navigasi utama">
+    <a href="#beranda" data-page="beranda">Beranda</a>
+    <a href="#produk" data-page="produk">Produk</a>
+    <a href="#pesanan" data-page="pesanan">Pesanan</a>
+  </nav>
+
+  <button
+    class="cart-button"
+    id="cartButton"
+    type="button"
+    title="Buka pesanan"
+  >
+    🛒 <span id="cartCount">0</span>
+  </button>
+
+</header>
+
+
+<main>
+
+  <!-- ================= BERANDA ================= -->
+
+  <section id="beranda" class="page active">
+
+    <div class="hero hero-pink">
+
+      <div class="hero-copy">
+
+        <span class="eyebrow">
+          BLOOMÉ FLORIST
+        </span>
+
+        <h1>
+          Bunga indah<br>
+          untuk setiap <em>momen.</em>
+        </h1>
+
+        <p>
+          Temukan rangkaian bunga pilihan untuk
+          orang-orang tersayang. Pilih bunga favoritmu
+          dan pesan dengan mudah.
+        </p>
+
+        <a class="btn btn-primary" href="#produk">
+          Belanja Sekarang →
+        </a>
+
+      </div>
+
+      <div class="hero-art">
+        <img
+          src="assets/hero-bouquet.jpg"
+          alt="Buket bunga merah muda"
+        >
+      </div>
+
+    </div>
+
+
+    <div class="benefits">
+
+      <div>
+        <span>🌷</span>
+        <strong>Bunga Segar</strong>
+        <small>Dibuat setiap hari</small>
+      </div>
+
+      <div>
+        <span>🚚</span>
+        <strong>Pengiriman Tepat</strong>
+        <small>Sampai sesuai jadwal</small>
+      </div>
+
+      <div>
+        <span>▣</span>
+        <strong>Pembayaran Aman</strong>
+        <small>Berbagai metode</small>
+      </div>
+
+      <div>
+        <span>♡</span>
+        <strong>Pelayanan Ramah</strong>
+        <small>Siap membantu</small>
+      </div>
+
+    </div>
+
+
+    <section class="section-block">
+
+      <div class="section-heading">
+        <h2>Kategori Bunga</h2>
+        <a href="#produk">Lihat Semua →</a>
+      </div>
+
+      <div
+        class="category-grid"
+        id="categoryGrid"
+      ></div>
+
+    </section>
+
+
+    <section class="section-block">
+
+      <div class="section-heading">
+        <h2>Produk Unggulan</h2>
+        <a href="#produk">Lihat Semua →</a>
+      </div>
+
+      <div
+        class="featured-grid"
+        id="featuredGrid"
+      ></div>
+
+    </section>
+
+
+    <section class="story-banner">
+
+      <div>
+
+        <span class="eyebrow">
+          BUAT MOMEN LEBIH SPESIAL
+        </span>
+
+        <h2>
+          Karena setiap bunga<br>
+          punya cerita.
+        </h2>
+
+        <p>
+          Pesan buket pilihanmu untuk ulang tahun,
+          wisuda, anniversary, atau sekadar memberi kejutan.
+        </p>
+
+        <a
+          class="btn btn-primary"
+          href="#produk"
+        >
+          Lihat Koleksi →
+        </a>
+
+      </div>
+
+      <img
+        src="assets/hero-products.jpg"
+        alt="Rangkaian bunga Bloomé"
+      >
+
+    </section>
+
+  </section>
+
+
+  <!-- ================= PRODUK ================= -->
+
+  <section id="produk" class="page">
+
+    <div class="page-banner green-banner">
+
+      <div>
+
+        <span class="eyebrow">
+          BLOOMÉ COLLECTION
+        </span>
+
+        <h1>Semua Produk</h1>
+
+        <p>
+          Pilih bunga favoritmu dan buat momen
+          menjadi lebih berkesan.
+        </p>
+
+      </div>
+
+      <img
+        src="assets/hero-products.jpg"
+        alt="Buket tulip"
+      >
+
+    </div>
+
+
+    <div class="toolbar">
+
+      <label
+        class="search-box"
+        for="searchInput"
+      >
+        ⌕
+
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="Cari bunga..."
+          aria-label="Cari bunga"
+        >
+
+      </label>
+
+
+      <label
+        class="sr-only"
+        for="categorySelect"
+      >
+        Pilih kategori
+      </label>
+
+      <select id="categorySelect">
+        <option value="Semua">
+          Kategori: Semua
+        </option>
+      </select>
+
+
+      <label
+        class="sr-only"
+        for="sortSelect"
+      >
+        Urutkan produk
+      </label>
+
+      <select id="sortSelect">
+
+        <option value="newest">
+          Urutkan: Terbaru
+        </option>
+
+        <option value="low">
+          Harga Terendah
+        </option>
+
+        <option value="high">
+          Harga Tertinggi
+        </option>
+
+        <option value="name">
+          Nama A-Z
+        </option>
+
+      </select>
+
+    </div>
+
+
+    <div class="products-layout">
+
+      <aside class="category-side">
+
+        <h3>Kategori</h3>
+
+        <div id="categorySide"></div>
+
+      </aside>
+
+
+      <div
+        class="product-grid"
+        id="productGrid"
+      ></div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= PESANAN ================= -->
+
+  <section id="pesanan" class="page">
+
+    <div class="page-banner green-banner order-banner">
+
+      <div>
+
+        <span class="eyebrow">
+          CHECKOUT
+        </span>
+
+        <h1>
+          Keranjang & Pesanan
+        </h1>
+
+        <p>
+          Periksa bunga pilihanmu sebelum melakukan pemesanan.
+        </p>
+
+      </div>
+
+      <img
+        src="assets/order-bouquet.jpg"
+        alt="Buket bunga"
+      >
+
+    </div>
+
+
+    <div class="checkout-layout">
+
+      <section class="card cart-card">
+
+        <h2>🛒 Keranjang Anda</h2>
+
+        <div id="cartItems"></div>
+
+        <div
+          class="totals"
+          id="totals"
+        ></div>
+
+      </section>
+
+
+      <section class="card form-card">
+
+        <h2>♙ Data Pemesan</h2>
+
+        <form id="orderForm">
+
+          <label for="name">
+
+            Nama Lengkap <b>*</b>
+
+            <input
+              id="name"
+              name="name"
+              required
+              autocomplete="name"
+              placeholder="Masukkan nama lengkap"
+            >
+
+          </label>
+
+
+          <label for="phone">
+
+            Nomor WhatsApp <b>*</b>
+
+            <input
+              id="phone"
+              name="phone"
+              required
+              inputmode="tel"
+              autocomplete="tel"
+              placeholder="08xxxxxxxxxx"
+            >
+
+          </label>
+
+
+          <label for="address">
+
+            Alamat Pengiriman <b>*</b>
+
+            <textarea
+              id="address"
+              name="address"
+              required
+              autocomplete="street-address"
+              placeholder="Masukkan alamat lengkap"
+            ></textarea>
+
+          </label>
+
+
+          <fieldset>
+
+            <legend>
+              Metode Pembayaran
+            </legend>
+
+            <label class="radio">
+              <input
+                type="radio"
+                name="payment"
+                value="Transfer Bank"
+                checked
+              >
+              Transfer Bank
+            </label>
+
+            <label class="radio">
+              <input
+                type="radio"
+                name="payment"
+                value="E-Wallet"
+              >
+              E-Wallet
+            </label>
+
+            <label class="radio">
+              <input
+                type="radio"
+                name="payment"
+                value="COD"
+              >
+              COD (Bayar di Tempat)
+            </label>
+
+          </fieldset>
+
+
+          <button
+            class="btn btn-primary full"
+            type="submit"
+          >
+            Pesan Sekarang →
+          </button>
+
+        </form>
+
+      </section>
+
+    </div>
+
+
+    <div class="checkout-benefits">
+
+      <div>
+        ♧
+        <strong>Proses Cepat</strong>
+        <small>1–5 hari</small>
+      </div>
+
+      <div>
+        ♡
+        <strong>Bunga Cantik</strong>
+        <small>Pilihan terbaik</small>
+      </div>
+
+      <div>
+        ▣
+        <strong>Pengiriman Aman</strong>
+        <small>Sampai tujuan</small>
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer class="footer">
+
+  <div>
+
+    <strong>❀ Bloomé</strong>
+
+    <small>Florist</small>
+
+    <p>
+      Bunga indah untuk setiap momen.
+    </p>
+
+  </div>
+
+
+  <div>
+
+    <strong>Tautan</strong>
+
+    <a href="#beranda">Beranda</a>
+    <a href="#produk">Produk</a>
+    <a href="#pesanan">Pesanan</a>
+
+  </div>
+
+
+  <div>
+
+    <strong>Kontak</strong>
+
+    <span>☎ 0858 2186 0319</span>
+    <span>✉ bloomeflorist@gmail.com</span>
+    <span>⌖ Banjarmasin, Kalimantan Selatan</span>
+
+  </div>
+
+
+  <div class="social">
+    ◎ ♪ ◉
+  </div>
+
+
+  <small class="copyright">
+    © 2026 Bloomé Florist. All rights reserved.
+  </small>
+
+</footer>
+
+
+<div
+  class="toast"
+  id="toast"
+  role="status"
+></div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
