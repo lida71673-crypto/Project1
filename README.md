@@ -27,9 +27,3 @@
   - Notifikasi ringkas (*Toast Alert*) untuk setiap interaksi aksi pengguna.
 
 ---
-
-## Cara Menjalankan
-
-1. **Unduh / Clone Repository**:
-   ```bash
-   git clone [https://github.com/USERNAME/bloome-florist.git](https://github.com/USERNAME/bloome-florist.git)
